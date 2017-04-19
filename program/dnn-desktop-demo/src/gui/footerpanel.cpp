@@ -44,6 +44,13 @@ FooterPanel::FooterPanel(QWidget* parent) : QFrame(parent) {
     addCompany(layout, "ctuning", "cknowledge.org/ai");
 
     layout->addStretch();
+
+    QUrl url("https://xored.slack.com/messages/C515A9HQA/");
+    auto label = new ClickableLabel(url);
+    label->setProperty("qss-role", "credential");
+    label->setText("Reach us in #CK channel, or ask Dmitry Savenko");
+    layout->addWidget(label);
+
     setLayout(layout);
 }
 
