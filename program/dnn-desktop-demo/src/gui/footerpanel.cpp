@@ -48,7 +48,7 @@ FooterPanel::FooterPanel(QWidget* parent) : QFrame(parent) {
     QUrl url("https://xored.slack.com/messages/C515A9HQA/");
     auto label = new ClickableLabel(url);
     label->setProperty("qss-role", "credential");
-    label->setText("Reach us in #CK channel, or ask Dmitry Savenko");
+    label->setText("Reach us in the #CK channel, or ask @dsavenko");
     layout->addWidget(label);
 
     setLayout(layout);
